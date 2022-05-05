@@ -55,4 +55,4 @@ jobs:
             - run: npm install
             - run: npm publish --tag ${GITHUB_REF##*/}
               env:
-                  NODE_AUTH_TOKEN: ${{ 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 }}
+                  NODE_AUTH_TOKEN: ${{ NPM_PACKAGE }}
