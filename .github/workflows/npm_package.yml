@@ -52,7 +52,7 @@ jobs:
               with:
                   node-version: 12
                   registry-url: https://npm.pkg.github.com/
-            - run: npm install
+            - run: npm ci
             - run: npm publish --tag ${GITHUB_REF##*/}
               env:
                   NODE_AUTH_TOKEN: "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"
